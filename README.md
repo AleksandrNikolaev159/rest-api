@@ -29,12 +29,13 @@ Username and password spring.datasource.username=”username” spring.datasourc
 Если возникают проблемы с кодировкой,то не забывайте указать путь к системной переменной JAVA_OPTS="-Dfile.encoding=utf-8"
 
 # 4. Приложение стартует на порту 8080 example:
+
 http://localhost:8080/RestApi/banks
----
+***
 http://localhost:8080/RestApi/clients
----
+***
 http://localhost:8080/RestApi/contributions
----
+***
 
 ***
 # Инструкция по работе с контроллером через http запросы:
@@ -47,15 +48,15 @@ http://localhost:8080/RestApi/contributions
 
 # Вывести все записи из таблицы "contributions"
 GET запрос : http://localhost:8080/contributions
----
+***
 
 # Вывести запись из таблицы "contributions" по id
 GET запрос : http://localhost:8080/contributions/{id}
----
+***
 
 # Добавить запись в таблицу " contributions " 
 POST запрос : http://localhost:8080/contributions/add
----
+***
 JSON пример : {
  "client_id":1,
  "bank_id":1,
@@ -66,7 +67,7 @@ JSON пример : {
 
 # Обновить запись в таблице " contributions "  по id
 POST запрос : http://localhost:8080/contributions/update
----
+***
 JSON пример : {
  "id":6,
  "client_id":1,
@@ -78,7 +79,7 @@ JSON пример : {
 
 # Удалить запись в таблице " contributions "  по id
 DELETE запрос : http://localhost:8080/contributions/{id}
----
+***
 
 # Работа с таблицей "banks"
 
@@ -86,15 +87,15 @@ DELETE запрос : http://localhost:8080/contributions/{id}
 
 # Вывести все записи из таблицы "banks"
 GET запрос : http://localhost:8080/banks
----
+***
 
 # Вывести запись из таблицы "banks" по id
 GET запрос : http://localhost:8080/banks/{id}
----
+***
 
 # Добавить запись в таблицу "banks" 
 POST запрос : http://localhost:8080/banks/add
----
+***
 JSON пример : {
  "name":"ВТБ-94",
  "bik":256543232356456
@@ -102,7 +103,7 @@ JSON пример : {
 
 # Обновить запись в таблице "banks" по id
 POST запрос : http://localhost:8080/banks/update
----
+***
 JSON пример : {
  "id":1,"name":"ВТБ-94",
  "bik":256543232356456
@@ -114,15 +115,15 @@ JSON пример : {
 
 # Вывести все записи из таблицы "clients"
 GET запрос : http://localhost:8080/clients
----
+***
 
 # Вывести запись из таблицы "clients"по id
 GET запрос : http://localhost:8080/clients/{id}
----
+***
 
 # Добавить запись в таблицу "clients" 
 POST запрос : http://localhost:8080/clients/add
----
+***
 JSON пример : {
  "name":"Иванов Иван Иванович",
  "shortName":"Иванов И.И.",
@@ -131,7 +132,7 @@ JSON пример : {
  
 # Обновить запись в таблице "clients"  по id
 POST запрос : http://localhost:8080/clients/update
----
+***
 JSON пример : {
  "id":1,"name":"Иванов Иван Иванович",
  "shortName":"Иванов И.И.",
