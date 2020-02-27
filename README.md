@@ -33,6 +33,8 @@ http://localhost:8080/RestApi/clients
 ---
 http://localhost:8080/RestApi/contributions
 ---
+-----------------------------------
+
 ***
 # Инструкция по работе с контроллером через http запросы:
 
