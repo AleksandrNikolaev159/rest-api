@@ -46,15 +46,15 @@ http://localhost:8080/RestApi/contributions
 # ***Работа с основной таблицей "contributions":***
 -----------------------------------
 # 
-###Вывести все записи из таблицы "contributions"
+### Вывести все записи из таблицы "contributions"
 GET запрос : http://localhost:8080/contributions
 ***
 # 
-###Вывести запись из таблицы "contributions" по id
+### Вывести запись из таблицы "contributions" по id
 GET запрос : http://localhost:8080/contributions/{id}
 ***
 # 
-###Добавить запись в таблицу " contributions " 
+### Добавить запись в таблицу " contributions " 
 POST запрос : http://localhost:8080/contributions/add
 ***
 JSON пример : {
@@ -65,7 +65,7 @@ JSON пример : {
  "term_in_months":11
  }
 # 
-###Обновить запись в таблице " contributions "  по id
+### Обновить запись в таблице " contributions "  по id
 POST запрос : http://localhost:8080/contributions/update
 ***
 JSON пример : {
@@ -77,7 +77,7 @@ JSON пример : {
  "term_in_months":11
  }
 # 
-###Удалить запись в таблице " contributions "  по id
+### Удалить запись в таблице " contributions "  по id
 DELETE запрос : http://localhost:8080/contributions/{id}
 ***
 # 
@@ -85,15 +85,15 @@ DELETE запрос : http://localhost:8080/contributions/{id}
 # ***Работа с таблицей "banks"***
 -----------------------------------
 # 
-###Вывести все записи из таблицы "banks"
+### Вывести все записи из таблицы "banks"
 GET запрос : http://localhost:8080/banks
 ***
 # 
-###Вывести запись из таблицы "banks" по id
+### Вывести запись из таблицы "banks" по id
 GET запрос : http://localhost:8080/banks/{id}
 ***
 # 
-###Добавить запись в таблицу "banks"
+### Добавить запись в таблицу "banks"
 POST запрос : http://localhost:8080/banks/add
 ***
 JSON пример : {
@@ -101,7 +101,7 @@ JSON пример : {
  "bik":256543232356456
  }
 # 
-###Обновить запись в таблице "banks" по id
+### Обновить запись в таблице "banks" по id
 POST запрос : http://localhost:8080/banks/update
 ***
 JSON пример : {
@@ -113,15 +113,15 @@ JSON пример : {
 # ***Работа с таблицей "clients"***
 -----------------------------------
 # 
-###Вывести все записи из таблицы "clients"
+### Вывести все записи из таблицы "clients"
 GET запрос : http://localhost:8080/clients
 ***
 # 
-###Вывести запись из таблицы "clients"по id
+### Вывести запись из таблицы "clients"по id
 GET запрос : http://localhost:8080/clients/{id}
 ***
 # 
-###Добавить запись в таблицу "clients"
+### Добавить запись в таблицу "clients"
 POST запрос : http://localhost:8080/clients/add
 ***
 JSON пример : {
@@ -130,7 +130,7 @@ JSON пример : {
  "address":"Ивановская д.35 кв.21 "
  }
 # 
-###Обновить запись в таблице "clients"  по id
+### Обновить запись в таблице "clients"  по id
 POST запрос : http://localhost:8080/clients/update
 ***
 JSON пример : {
