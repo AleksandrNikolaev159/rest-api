@@ -19,19 +19,19 @@
 # ***Приложение использует базу данных PostgreSql перед сборкой исходника необходимо:***
 -----------------------------------
 
-# 1. ввести свои настройки бд в файле: \src\main\resources\application.properties
+** 1. ввести свои настройки бд в файле: \src\main\resources\application.properties **
 
 Connection url for the database "postgres" spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
 
 Username and password spring.datasource.username=”username” spring.datasource.password=”password”
 
-# 2. Ветка master собирает war file
+** 2. Ветка master собирает war file **
 В консоли для сборки исходника необходимо ввести команду mvn clean install
 
-# 3. Запуск осуществляйте либо в среде разработки,либо через TomCat.
+** 3. Запуск осуществляйте либо в среде разработки,либо через TomCat. **
 Если возникают проблемы с кодировкой,то не забывайте указать путь к системной переменной JAVA_OPTS="-Dfile.encoding=utf-8"
 
-# 4. Приложение стартует на порту 8080 example:
+** 4. Приложение стартует на порту 8080 example: **
 
 http://localhost:8080/RestApi/banks
 ***
