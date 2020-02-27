@@ -40,6 +40,7 @@ http://localhost:8080/RestApi/contributions
 Используйте Postman или другие сервисы для работы с запросами.
 
 # Работа с основной таблицей "contributions":
+-----------------------------------
 
 # Вывести все записи из таблицы "contributions"
 GET запрос : http://localhost:8080/contributions
@@ -78,6 +79,8 @@ DELETE запрос : http://localhost:8080/contributions/{id}
 
 # Работа с таблицей "banks"
 
+-----------------------------------
+
 # Вывести все записи из таблицы "banks"
 GET запрос : http://localhost:8080/banks
 ---
@@ -103,6 +106,8 @@ JSON пример : {
  }
 
 # Работа с таблицей "clients"
+
+-----------------------------------
 
 # Вывести все записи из таблицы "clients"
 GET запрос : http://localhost:8080/clients
