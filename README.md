@@ -12,6 +12,8 @@
 ***
 # Приложение использует базу данных PostgreSql перед сборкой исходника необходимо:
 
+-----------------------------------
+
 # 1. ввести свои настройки бд в файле: \src\main\resources\application.properties
 
 Connection url for the database "postgres" spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
@@ -33,6 +35,7 @@ http://localhost:8080/RestApi/contributions
 ---
 ***
 # Инструкция по работе с контроллером через http запросы:
+
 -----------------------------------
 Используйте Postman или другие сервисы для работы с запросами.
 
