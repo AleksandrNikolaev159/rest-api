@@ -50,7 +50,6 @@ GET запрос : http://localhost:8080/contributions
 GET запрос : http://localhost:8080/contributions/{id}
 ### Добавить запись в таблицу " contributions " 
 POST запрос : http://localhost:8080/contributions/add
-***
 JSON пример : {
  "client_id":1,
  "bank_id":1,
