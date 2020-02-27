@@ -57,6 +57,7 @@ JSON пример : {
  "persent":13.22,
  "term_in_months":11
  }
+ ***
 ### Обновить запись в таблице " contributions "  по id
 POST запрос : http://localhost:8080/contributions/update
 ***
