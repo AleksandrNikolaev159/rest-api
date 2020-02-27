@@ -81,18 +81,18 @@ GET запрос : http://localhost:8080/banks
 GET запрос : http://localhost:8080/banks/{id}
 ### Добавить запись в таблицу "banks"
 POST запрос : http://localhost:8080/banks/add
-***
 JSON пример : {
  "name":"ВТБ-94",
  "bik":256543232356456
  }
+ ***
 ### Обновить запись в таблице "banks" по id
 POST запрос : http://localhost:8080/banks/update
-***
 JSON пример : {
  "id":1,"name":"ВТБ-94",
  "bik":256543232356456
  }
+ ***
 # 
 # 
 # ***Работа с таблицей "clients"***
@@ -103,17 +103,17 @@ GET запрос : http://localhost:8080/clients
 GET запрос : http://localhost:8080/clients/{id}
 ### Добавить запись в таблицу "clients"
 POST запрос : http://localhost:8080/clients/add
-***
 JSON пример : {
  "name":"Иванов Иван Иванович",
  "shortName":"Иванов И.И.",
  "address":"Ивановская д.35 кв.21 "
  }
+ ***
 ### Обновить запись в таблице "clients"  по id
 POST запрос : http://localhost:8080/clients/update
-***
 JSON пример : {
  "id":1,"name":"Иванов Иван Иванович",
  "shortName":"Иванов И.И.",
  "address":"Ивановская д.35 кв.21 "}
+ ***
  
