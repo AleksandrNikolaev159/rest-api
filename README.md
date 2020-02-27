@@ -1,6 +1,7 @@
 # Rest-API
-
+=====================
 # Stack используемых технологий:
+-----------------------------------
 - Spring Boot
 - Spring Data
 - Spring MVC
@@ -8,7 +9,7 @@
 - Hibernate ORM
 - JPA
 - Maven
-
+***
 # Приложение использует базу данных PostgreSql перед сборкой исходника необходимо:
 
 # 1. ввести свои настройки бд в файле: \src\main\resources\application.properties
@@ -26,8 +27,9 @@ Username and password spring.datasource.username=”username” spring.datasourc
 # 4. Приложение стартует на порту 8080 example:
 http://localhost:8080/RestApi/banks http://localhost:8080/RestApi/clients http://localhost:8080/RestApi/contributions
 
-
+***
 # Инструкция по работе с контроллером через http запросы:
+-----------------------------------
 Используйте Postman или другие сервисы для работы с запросами.
 
 # Работа с основной таблицей "contributions":
