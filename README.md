@@ -36,9 +36,11 @@ http://localhost:8080/RestApi/banks http://localhost:8080/RestApi/clients http:/
 
 # Вывести все записи из таблицы "contributions"
 GET запрос : http://localhost:8080/contributions
+---
 
 # Вывести запись из таблицы "contributions" по id
 GET запрос : http://localhost:8080/contributions/{id}
+---
 
 # Добавить запись в таблицу " contributions " 
 POST запрос : http://localhost:8080/contributions/add
@@ -65,14 +67,17 @@ JSON пример : {
 
 # Удалить запись в таблице " contributions "  по id
 DELETE запрос : http://localhost:8080/contributions/{id}
+---
 
 # Работа с таблицей "banks"
 
 # Вывести все записи из таблицы "banks"
 GET запрос : http://localhost:8080/banks
+---
 
 # Вывести запись из таблицы "banks" по id
 GET запрос : http://localhost:8080/banks/{id}
+---
 
 # Добавить запись в таблицу "banks" 
 POST запрос : http://localhost:8080/banks/add
@@ -94,9 +99,11 @@ JSON пример : {
 
 # Вывести все записи из таблицы "clients"
 GET запрос : http://localhost:8080/clients
+---
 
 # Вывести запись из таблицы "clients"по id
 GET запрос : http://localhost:8080/clients/{id}
+---
 
 # Добавить запись в таблицу "clients" 
 POST запрос : http://localhost:8080/clients/add
