@@ -113,6 +113,6 @@ POST запрос : http://localhost:8080/clients/update
 JSON пример : {
  "id":1,"name":"Иванов Иван Иванович",
  "shortName":"Иванов И.И.",
- "address":"Ивановская д.35 кв.21 "}
+ "address":"Ивановская д.3 кв.21 "}
  ***
  
