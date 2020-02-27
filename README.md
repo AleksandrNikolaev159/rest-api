@@ -50,6 +50,7 @@ GET запрос : http://localhost:8080/contributions
 GET запрос : http://localhost:8080/contributions/{id}
 ### Добавить запись в таблицу " contributions " 
 POST запрос : http://localhost:8080/contributions/add
+ ***
 JSON пример : {
  "client_id":1,
  "bank_id":1,
@@ -60,6 +61,7 @@ JSON пример : {
  ***
 ### Обновить запись в таблице " contributions "  по id
 POST запрос : http://localhost:8080/contributions/update
+ ***
 JSON пример : {
  "id":6,
  "client_id":1,
@@ -81,6 +83,7 @@ GET запрос : http://localhost:8080/banks
 GET запрос : http://localhost:8080/banks/{id}
 ### Добавить запись в таблицу "banks"
 POST запрос : http://localhost:8080/banks/add
+ ***
 JSON пример : {
  "name":"ВТБ-94",
  "bik":256543232356456
@@ -88,6 +91,7 @@ JSON пример : {
  ***
 ### Обновить запись в таблице "banks" по id
 POST запрос : http://localhost:8080/banks/update
+ ***
 JSON пример : {
  "id":1,"name":"ВТБ-94",
  "bik":256543232356456
@@ -103,6 +107,7 @@ GET запрос : http://localhost:8080/clients
 GET запрос : http://localhost:8080/clients/{id}
 ### Добавить запись в таблицу "clients"
 POST запрос : http://localhost:8080/clients/add
+ ***
 JSON пример : {
  "name":"Иванов Иван Иванович",
  "shortName":"Иванов И.И.",
@@ -111,6 +116,7 @@ JSON пример : {
  ***
 ### Обновить запись в таблице "clients"  по id
 POST запрос : http://localhost:8080/clients/update
+ ***
 JSON пример : {
  "id":1,"name":"Иванов Иван Иванович",
  "shortName":"Иванов И.И.",
