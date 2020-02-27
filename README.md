@@ -25,8 +25,12 @@ Username and password spring.datasource.username=”username” spring.datasourc
 Если возникают проблемы с кодировкой,то не забывайте указать путь к системной переменной JAVA_OPTS="-Dfile.encoding=utf-8"
 
 # 4. Приложение стартует на порту 8080 example:
-http://localhost:8080/RestApi/banks http://localhost:8080/RestApi/clients http://localhost:8080/RestApi/contributions
-
+http://localhost:8080/RestApi/banks
+---
+http://localhost:8080/RestApi/clients
+---
+http://localhost:8080/RestApi/contributions
+---
 ***
 # Инструкция по работе с контроллером через http запросы:
 -----------------------------------
