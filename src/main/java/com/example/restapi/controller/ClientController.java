@@ -2,6 +2,7 @@ package com.example.restapi.controller;
 
 import com.example.restapi.model.Client;
 import com.example.restapi.serviceImpl.ClientServiceImpl;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.SortDefault;
@@ -23,12 +24,14 @@ public class ClientController {
 
     //вывод всех клиентов
     @RequestMapping(method = RequestMethod.GET)
+    @Operation(summary = "Вывести все записи из таблицы \"clients\"")
     public ResponseEntity<Collection<Client>>getClients(@ModelAttribute Client client, @SortDefault(sort = "id") Sort sort){
         return new ResponseEntity<>(clientService.getAll(client,sort), HttpStatus.OK);
     }
 
     //вывод клиента по id
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    @Operation(summary = "Вывести запись из таблицы \"clients\"по id")
     public ResponseEntity<Client> getClient(@PathVariable long id){
         Client client = clientService.geByID(id);
 
@@ -42,18 +45,21 @@ public class ClientController {
 
     //добавление клиента
     @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @Operation(summary = "Добавить запись в таблицу \"clients\"")
     public ResponseEntity<?> addClient (@RequestBody Client client){
         return new ResponseEntity<>(clientService.save(client),HttpStatus.CREATED);
     }
 
     //обновление клиента
     @RequestMapping(value = "/update",method = RequestMethod.POST)
+    @Operation(summary = "Обновить запись в таблице \"clients\"  по id")
     public ResponseEntity<?> updateClient (@RequestBody Client client){
         return new ResponseEntity<>(clientService.update(client),HttpStatus.UPGRADE_REQUIRED);
     }
 
     //удаление клиента по id
     @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
+    @Operation(summary = "Удалить запись в таблице \"clients\"  по id")
     public ResponseEntity<Void>deleteClient(@PathVariable long id){
 
         Client client = clientService.geByID(id);
