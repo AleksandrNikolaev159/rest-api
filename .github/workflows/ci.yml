@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: Build and Test
+        run: |
+          ./mvnw clean install
+    ```
+
+В этом примере:
+
+  - `name` - название workflow.
+  - `on` - определяет, при каких событиях workflow будет запущен (в данном случае, при push в ветку `main`).
+  - `jobs` - список задач, которые должны быть выполнены.
+
